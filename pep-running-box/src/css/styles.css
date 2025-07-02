@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* plomo claro */
+    color: #fff; /* letras blancas */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #424242; /* plomo oscuro para contraste */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn,
+.btn-primary,
+.btn-custom {
+    background-color: #111 !important; /* negro */
+    color: #fff !important;
+    border: none;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-custom:hover {
+    background-color: #333 !important; /* plomo oscuro */
+    color: #fff !important;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    background-color: #616161;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    background-color: #757575;
+    color: #fff;
+    border-color: #fff;
+}
+
+a, a:hover {
+    color: #fff !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+}
+
+.navbar, .bg-dark, footer {
+    background-color: #111 !important; /* negro */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+footer,
+footer a,
+footer i {
+    color: #fff !important; /* letras e iconos blancos */
+}
+
+.card {
+    background-color: #757575 !important; /* plomo medio */
+    color: #fff;
+    border: none;
+}
+
+.card-header {
+    background-color: #212121 !important; /* negro/plomo oscuro */
+    color: #fff;
+}
