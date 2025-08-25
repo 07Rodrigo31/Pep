@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* plomo claro */
+    color: #fff; /* letras blancas */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #424242; /* plomo oscuro para contraste */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn,
+.btn-primary,
+.btn-custom {
+    background-color: #111 !important; /* negro */
+    color: #fff !important;
+    border: none;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-custom:hover {
+    background-color: #333 !important; /* plomo oscuro */
+    color: #fff !important;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    background-color: #616161;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    background-color: #757575;
+    color: #fff;
+    border-color: #fff;
+}
+
+a, a:hover {
+    color: #fff !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+}
+
+.navbar, .bg-dark, footer {
+    background-color: #111 !important; /* negro */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+footer,
+footer a,
+footer i {
+    color: #fff !important; /* letras e iconos blancos */
+}
+
+.card {
+    background-color: #757575 !important; /* plomo medio */
+    color: #fff;
+    border: none;
+}
+
+.card-header {
+    background-color: #212121 !important; /* negro/plomo oscuro */
+    color: #fff;
+}
+
+/* Ajustes para footer de tarjeta y contador */
+.card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 0.75rem 1rem;
+}
+
+.counter-row {
+    color: #fff;
+    font-weight: 600;
+}
+
+.acquire-btn {
+    background-color: #111 !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* pequeño feedback visual al presionar */
+.acquire-btn:active {
+    transform: translateY(1px);
+}
+
+/* responsive: que las tarjetas se vean bien */
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* estilos para modal y controles */
+#inscriptions-list .modal-count {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.modal-plus, .modal-minus {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#total-badge {
+    font-weight: 700;
+    min-width: 28px;
+    text-align: center;
+}
+/* mejora contraste de items en modal */
+#inscriptions-list .list-group-item {
+    background: #f8f9fa;
+    color: #212529;
+}
+
+/* Mantener orden y evitar que los elementos del navbar hagan wrap */
+.navbar-nav {
+    flex-wrap: nowrap;        /* evita que los items se muevan a la siguiente línea */
+    align-items: center;
+}
+
+/* Evita que el texto de los items se rompa y garantiza scroll horizontal si hace falta */
+.navbar-nav .nav-link {
+    white-space: nowrap;
+}
+
+/* Permite deslizar horizontalmente el navbar cuando no cabe (móvil) */
+.navbar-collapse {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ajusta el padding-top si tu navbar tiene otra altura */
+@media (min-width: 0) {
+    body { padding-top: 70px; }
+}
+@media (max-width: 575.98px) {
+    body { padding-top: 90px; }
+}
+
